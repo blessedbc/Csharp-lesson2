@@ -1,0 +1,61 @@
+Console.WriteLine("Hello\nWorld!");
+Console.WriteLine("Hello\tWorld!");Output
+Hello
+World!
+Hello	World!
+Console.WriteLine("Hello "World"!");Output
+(1,27): error CS1003: Syntax error, ',' expected
+(1,32): error CS1003: Syntax error, ',' expected
+(1,27): error CS0103: The name 'World' does not exist in the current context
+Console.WriteLine("Hello \"World\"!");Output
+Hello "World"!
+Console.WriteLine("c:\source\repos");Output
+(1,22): error CS1009: Unrecognized escape sequence
+Console.WriteLine("c:\\source\\repos");Output
+c:\source\repos
+Console.WriteLine("Generating invoices for customer \"Contoso corp\" ... \n");
+Console.WriteLine("Invoice: 1021\t\tcomplete!");
+Console.WriteLine("Invoice: 1022\t\tcomplete!");
+Console.WriteLine("\nOutput Diretory:\t");Output
+Generating invoices for customers "Contoso corp" ... 
+
+Invoice: 1021		complete!
+Invoice: 1022		complete!
+
+Output Diretory:	
+Console.WriteLine(@"     c:\source\repos
+        (this is where your code goes)");Output
+     c:\source\repos
+        (this is where your code goes)
+        Console.WriteLine(@"c:\invoices");c:\invoices
+        string firstname = "Bob";
+string message = "Hello " + firstname;
+Console.WriteLine(message);Output
+Hello Bob
+string firstname = "Bob";
+string greeting = "Hello";
+string message = greeting + " " + firstname + "!";
+Console.WriteLine(message);Output
+Hello Bob!
+string firstname = "Bob";
+string greeting = "Hello";
+Console.WriteLine(greeting + " " + firstname + "!");
+Output
+Hello Bob!
+string firstname = "Bob";
+string message = $"Hello {firstname}!";
+Console.WriteLine(message);Output
+Hello Bob!
+int version = 11;
+string updateText = "update to windows";
+string message = $"{updateText} {version}";
+Console.WriteLine(message);Output
+update to windows 11
+int version = 11;
+string updateText = "update to windows";
+Console.WriteLine($"{updateText} {version}");
+Output
+update to windows 11
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Date");Output
+C:\Output\First-Project\Date
